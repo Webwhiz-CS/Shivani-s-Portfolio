@@ -150,13 +150,23 @@
                 this.style.transform = 'translateY(0)';
             });
         });
-   document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
 
     if (toggle && menu) {
+        // Toggle open/close
         toggle.addEventListener('click', () => {
             menu.classList.toggle('active');
         });
+
+        // Close menu when a link is clicked
+        const navLinks = menu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+            });
+        });
     }
 });
+
