@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivani Jadhav - Frontend Developer</title>
-     <link rel="stylesheet" href="style.css">
-     <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <nav id="navbar">
         <div class="container">
             <a href="#home" class="logo">Shivani Jadhav</a>
-            <ul>
+            <span class="menu-toggle" id="menu-toggle">&#9776;</span>
+            <ul id="menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Shivani Jadhav</h1>
-            <p class="subtitle">Frontend Developer & UI/UX Enthusiast</p>
-            <p class="description">Creating beautiful, responsive web experiences with modern technologies</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
-        </div>
+</div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Shivani Jadhav</h1>
+        <p class="subtitle">Frontend Developer & UI/UX Enthusiast</p>
+        <p class="description">Creating beautiful, responsive web experiences with modern technologies</p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+    </div>
     </section>
 
     <section id="about" class="about section">
@@ -145,7 +147,7 @@
             </div>
         </div>
     </section>
-
+    
     <section id="projects" class="projects section">
         <h2>Featured Projects</h2>
         <div class="projects-grid">
@@ -204,7 +206,7 @@
             </div>
         </div>
     </section>
-
+    
     <section id="contact" class="contact section">
         <h2>Get In Touch</h2>
         <div class="contact-content">
@@ -252,10 +254,10 @@
             </form>
         </div>
     </section>
-
+    
     <footer>
         <p>&copy; 2024 Shivani Jadhav. All rights reserved.</p>
     </footer>
-   
-    </body>
-    </html>
+    <script src="main.js"></script>
+</body>
+</html>
